@@ -1,84 +1,50 @@
 <?php include("template/cabecera.php"); ?>
-<div class="d-flex">
-  <div class="col-md-3 p-2     ">
-    <div class="card">
-      <img class="card-img-top" src="imagenes/img3.jpg" alt="Title">
-      <div class="card-body">
-        <h4 class="card-title">Equipos e Insumos</h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Catálogo</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-md-3  p-2     ">
-    <div class="card">
-      <img class="card-img-top" src="imagenes/img3.jpg" alt="Title">
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="imagenes/Dra.webp" class="card-img-top" alt="...">
       <div class="card-body">
-        <h4 class="card-title">Medicamentos y más</h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Ver más</a>
+        <h5 class="card-title">Tu médico en línea</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-
-  <div class="col-md-3 p-2      ">
-    <div class="card">
-      <img class="card-img-top" src="imagenes/Dra.webp" alt="Consulta Médica">
+  <div class="col">
+    <div class="card h-100">
+      <img src="imagenes/equipos-médicos.webp" class="card-img-top" alt="...">
       <div class="card-body">
-        <h4 class="card-title">Tu médico en línea</h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Ver más</a>
+        <h5 class="card-title">Equipos e insumos médicos</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-  <div class="col-md-3  p-2     ">
-    <div class="card">
-      <img class="card-img-top" src="imagenes/img4.jpg" alt="Title">
+  <div class="col">
+    <div class="card h-100">
+      <img src="imagenes/salud-visual.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h4 class="card-title">Atención en el hogar</h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Ver más</a>
+        <h5 class="card-title">Cuidamos tu visión</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="imagenes/feliz-joven-repartidora-uniforme-azul-gorra-caja-carton-portapapeles-mirando-sonrisa-cara-pie-sobre-pared-naranja.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Te lo llevamos a tu casa</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
 </div>
-<div class="d-flex">
-  <div class="col-md-3 p-2     ">
-    <div class="card">
-      <img class="card-img-top" src="imagenes/img3.jpg" alt="Title">
-      <div class="card-body">
-        <h4 class="card-title">Envíos a todo el país</h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Catálogo</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3  p-2     ">
-    <div class="card">
-      <img class="card-img-top" src="imagenes/img3.jpg" alt="Title">
-      <div class="card-body">
-        <h4 class="card-title">Revista Salud y Fitness</h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Ver más</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-3 p-2      ">
-    <div class="card">
-      <img class="card-img-top" src="imagenes/Dra.webp" alt="Consulta Médica">
-      <div class="card-body">
-        <h4 class="card-title">Nutrición y Dietética</h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Ver más</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3  p-2     ">
-    <div class="card">
-      <img class="card-img-top" src="imagenes/img4.jpg" alt="Title">
-      <div class="card-body">
-        <h4 class="card-title">Descubre más secciones</h4>
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Ver más</a>
-      </div>
-    </div>
-  </div>
+<div class="container">
+   <br>
 </div>
+  
+  
 
 
-<?php include("template/pie_pagina.php"); ?>
+
+
+    <?php include("template/pie_pagina.php"); ?>
