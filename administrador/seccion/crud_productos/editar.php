@@ -25,8 +25,19 @@
                 </div>
                 <form action="editarproceso.php" class="p-4" method="POST">
                     <div class="mb-3">
-                        <label class="form-label">Tipo:</label>
-                        <input type="text" class="form-control" name="txtTipo"  require value="<?php echo $producto-> id_tipo_producto;?>">
+                    <select name="txtTipo" id="txtTipo" require>
+                            <option value="">Tipo de producto</option>
+                        <?php 
+                        $sentencia2 = $conexion->query("SELECT * FROM tipo_producto");
+                        $rows = $sentencia2->fetchAll(PDO::FETCH_OBJ);
+                        foreach($rows as $row) {  ?>
+                            <option value="<?php print($row -> id); ?>"><?php print($row -> categoria); ?></option>;
+                       
+                        <?php
+                        }
+                        ?>
+                           
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Codigo:</label>
@@ -45,9 +56,20 @@
                         <input type="float" class="form-control" name="txtPrecio"  require value="<?php echo $producto->precio;?>">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Sucursal:</label>
-                        <input type="text" class="form-control" name="txtSucursal"  require value="<?php echo $producto->id_sucursal;?>">
-                    </div>
+                    <label class="form-label">Sucursal:</label>
+                        <select name="txtSucursal" id="txtSucursal" require>
+                        <option value="">Sucursal</option>
+                        <?php 
+                        $sentencia3 = $conexion->query("SELECT * FROM sucursales");
+                        $filas = $sentencia3->fetchAll(PDO::FETCH_OBJ);
+                        foreach($filas as $fila) {  ?>
+                            <option value="<?php print($fila -> id); ?>"><?php print($fila -> nombre); ?></option>;
+                       
+                        <?php
+                        }
+                        ?>
+                           
+                        </select>
                     <div class="d-grid">
                         <input type="hidden" name="id" value="<?php echo $producto->id;?>">
                         <input type="submit" class="btn btn-primary" value="Editar">

@@ -19,8 +19,9 @@
         
         <a class="nav-item nav-link" href="#">Registro de ventas y pagos</a>
         <a class="nav-item nav-link" href="#">Sucursales</a>
-            <a class="nav-item nav-link" hhref="#">Empleados</a>
-            <a class="nav-item nav-link" href="#"> Usuarios del sistema</a>
+        <a class="nav-item nav-link" href="<?php echo $url."/administrador/seccion/crud_proveedores/proveedores.php"; ?> ">Proveedores</a>
+        <a class="nav-item nav-link" hhref="#">Empleados</a>
+        <a class="nav-item nav-link" href="<?php echo $url."/administrador/seccion/usuarios.php"; ?>"> Usuarios del sistema</a>
 
         <a class="nav-item nav-link" href="<?php echo $url; ?> ">Ver Sitio Web</a>
         <a class="nav-item nav-link" href="<?php echo $url."/administrador/seccion/cerrar.php"; ?>">Cerrar Sesión</a>

@@ -38,7 +38,7 @@ $listaUsuarios = $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 <div class="card-body">
     <h2 class="text-black text-center p-2">Usuarios registrados</h2>
     <table class="table p-2 table-bordered">
-        <table>
+        <table class="table table-striped">
             <thead>
                <tr>
                     <th> Id </th>
@@ -52,7 +52,7 @@ $listaUsuarios = $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
             <body>
                 <?php foreach ($listaUsuarios as $usuario) {?>
-
+               
                 <tr>
                     <th> <? $usuario['id']  ?></th>
                     <th><? $usuario['nombre']  ?></th>

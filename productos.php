@@ -39,12 +39,12 @@
   </div>
 </div>
 <div class="container">
-   <br>
+  <br>
 </div>
-  
-  
 
 
 
 
-    <?php include("template/pie_pagina.php"); ?>
+
+
+<?php include("template/pie_pagina.php"); ?>

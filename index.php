@@ -50,7 +50,7 @@
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
-   <div class="card p-3 m-3" style="width: 18rem;">
+  <div class="card p-3 m-3" style="width: 18rem;">
     <img class="card-img-top" src="imagenes/shampoo.jpg" alt="Card image cap">
     <div class="card-body">
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -59,66 +59,83 @@
 </div>
 <h2 class="p-1 text-bg-info text-center">Conoce nuestros productos y servicios</h2>
 
-<div class="row d-flex p-2">
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Médico en Línea</h3>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus a velit commodi deleniti, animi odio ullam! Labore quidem unde dolore, praesentium corporis laboriosam rem ab, deserunt repudiandae, quod ratione!</p>
-        <button type="button" class="btn btn-primary">Leer</button>
-      </div>
+<div class="d-flex m-4 justify-content-between">
+  <div class="card m-2 border-primary" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Médico en línea</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="productos.php" class="card-link">Ver más</a>
+      
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Envíos</h3>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem quia facilis, culpa perferendis illum expedita ducimus! Mollitia quasi ea eius impedit! Possimus porro tempore hic, placeat excepturi nobis voluptate.</p>
-        <button type="button" class="btn btn-primary">Leer</button>
-      </div>
+  <div class="card m-2 border-info" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Equipos Médicos</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="productos.php" class="card-link">Ver más</a>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Nutrición y Dietética</h3>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem quia facilis, culpa perferendis illum expedita ducimus! Mollitia quasi ea eius impedit! Possimus porro tempore hic, placeat excepturi nobis voluptate.</p>
-        <button type="button" class="btn btn-primary">Leer</button>
-      </div>
+  <div class="card m-2 border-success" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Cuidamos tu salud visual</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="productos.php" class="card-link">Ver más</a>
     </div>
   </div>
+  <div class="card m-2 border-warning" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Envíos a nivel nacional</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="productos.php" class="card-link">Ver más</a>
+    </div>
+  </div>
+
 </div>
 
-<div class="row d-flex p-2">
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Medicamentos</h3>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus a velit commodi deleniti, animi odio ullam! Labore quidem unde dolore, praesentium corporis laboriosam rem ab, deserunt repudiandae, quod ratione!</p>
-        <button type="button" class="btn btn-primary">Leer</button>
+<h2 class="p-1 text-bg-info text-center">Comentarios de nuestros clientes</h2>
+
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="imagenes/elegante-empresaria-segura-sonriendo.jpg" class="d-block w-100 img-responsive" alt="mujer sonriendo">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="imagenes/feliz-joven-repartidora-uniforme-azul-gorra-caja-carton-portapapeles-mirando-sonrisa-cara-pie-sobre-pared-naranja.jpg" class="d-block w-100 img-responsive" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/esperanza-optimista-linda-mujer.jpg" class="d-block w-100 img-responsive" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Equipos e Insumos</h3>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem quia facilis, culpa perferendis illum expedita ducimus! Mollitia quasi ea eius impedit! Possimus porro tempore hic, placeat excepturi nobis voluptate.</p>
-        <button type="button" class="btn btn-primary">Leer</button>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Aseo Personal</h3>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus exercitationem quia facilis, culpa perferendis illum expedita ducimus! Mollitia quasi ea eius impedit! Possimus porro tempore hic, placeat excepturi nobis voluptate.</p>
-        <button type="button" class="btn btn-primary">Leer</button>
-      </div>
-    </div>
-  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
-
 
 <?php include("template/pie_pagina.php"); ?>

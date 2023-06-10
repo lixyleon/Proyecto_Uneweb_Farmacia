@@ -1,5 +1,5 @@
 <?php  
-    //print_r($_POST);
+    print_r($_POST);
     if(empty($_POST['oculto']) || empty($_POST['txtTipo'] ) || empty($_POST['txtCodigo'] ) || empty($_POST['txtNombre'] ) || empty($_POST['txtCantidad'] )|| empty($_POST['txtPrecio'] ) || empty($_POST['txtSucursal'] )) {
         header('location: inventario.php?mensaje=falta');
         exit();
