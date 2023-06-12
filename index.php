@@ -57,8 +57,9 @@
     </div>
   </div>
 </div>
-<h2 class="p-1 text-bg-info text-center">Conoce nuestros productos y servicios</h2>
-
+<div class="bg-info servicios">
+  <h2 class="p-1 text-center">Conoce nuestros servicios</h2>
+</div>
 <div class="d-flex m-4 justify-content-between">
   <div class="card m-2 border-primary" style="width: 18rem;">
     <div class="card-body">
