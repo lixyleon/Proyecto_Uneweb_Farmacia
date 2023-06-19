@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,42 +11,43 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-primary">
-        <div class="contaniner-fluid">
-            <a class="navbar-brand" href="#"><strong class="text-info p-2">Logo</strong></a>
+
+    <nav class="navbar navbar-expand-lg bg-primary text-white">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="contaniner m-2 nav navbar-nav d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+                        <path d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9H1.475Z" />
+                        <path d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.88Z" />
+                    </svg>
+                    <p>
+                    <h2> <strong>FarmaSalud</strong> </h2>
+                    </p>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.php">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="productos.php">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="nosotros.php">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-        <ul class="nav navbar-nav ms-auto mb-2 mb-lg-0 p-2">
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Tiendas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productos.php">Productos y Servicios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="nosotros.php">Nosotros</a>
-            </li>
-         </ul>
-        <div class="ms-auto d-flex">
-            <form class="d-flex " role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-info" type="submit">Buscar</button>
-            </form>
-            <i class="bi bi-person-fill text-light p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                </svg>
-            </i>
-        </div>
-        
-     </nav>
-     <div class="wave-header">
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#593196" fill-opacity="1" d="M0,192L48,160C96,128,192,64,288,53.3C384,43,480,85,576,122.7C672,160,768,192,864,181.3C960,171,1056,117,1152,106.7C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-        </div>
+    </nav>
     
-     
    
-    
-    

@@ -1,142 +1,229 @@
 <?php include("template/cabecera.php"); ?>
 
-<h2 class="text-info p-2">Farmacia</h2>
-<div class="text-center ">
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eos. Reprehenderit aspernatur harum laudantium ad delectus nam necessitatibus non itaque. Dignissimos aliquam dolor delectus ex nobis voluptates neque! Iusto, a?</p>
-</div>
-
-<div class="d-flex p-2 m-2">
-  <div class="card p-3 m-3" style="width: 18rem;">
-    <img class="card-img-top" src="imagenes/burgesic.png" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card p-3 m-3" style="width: 18rem;">
-    <img class="card-img-top" src="imagenes/crema.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card p-3 m-3" style="width: 18rem;">
-    <img class="card-img-top" src="imagenes/pañal.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card p-3 m-3" style="width: 18rem;">
-    <img class="card-img-top" src="imagenes/pañal.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-</div>
-<div class="d-flex p-2 m-2">
-  <div class="card p-3 m-3" style="width: 18rem;">
-    <img class="card-img-top" src="imagenes/protector.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card p-3 m-3" style="width: 18rem;">
-    <img class="card-img-top" src="imagenes/burgesic.png" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card p-3 m-3" style="width: 18rem;">
-    <img class="card-img-top" src="imagenes/shampoo.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card p-3 m-3" style="width: 18rem;">
-    <img class="card-img-top" src="imagenes/shampoo.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-</div>
-<div class="bg-info servicios">
-  <h2 class="p-1 text-center">Conoce nuestros servicios</h2>
-</div>
-<div class="d-flex m-4 justify-content-between">
-  <div class="card m-2 border-primary" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Médico en línea</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="productos.php" class="card-link">Ver más</a>
-      
-    </div>
-  </div>
-  <div class="card m-2 border-info" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Equipos Médicos</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="productos.php" class="card-link">Ver más</a>
-    </div>
-  </div>
-  <div class="card m-2 border-success" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Cuidamos tu salud visual</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="productos.php" class="card-link">Ver más</a>
-    </div>
-  </div>
-  <div class="card m-2 border-warning" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Envíos a nivel nacional</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="productos.php" class="card-link">Ver más</a>
-    </div>
-  </div>
-
-</div>
-
-<h2 class="p-1 text-bg-info text-center">Comentarios de nuestros clientes</h2>
-
-
-<div id="carouselExampleDark" class="carousel carousel-dark slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="imagenes/elegante-empresaria-segura-sonriendo.jpg" class="d-block w-100 img-responsive" alt="mujer sonriendo">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+<div class="container-fluid p-4  d-flex ">
+  <div class="card mb-3">
+    <div class="row g-0 ">
+      <div class="col-md-4">
+        <img src="imagenes/farmaceutico-comprobando-medicamentos-farmacia.jpg" class="img-fluid rounded-start" alt="...">
       </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="imagenes/feliz-joven-repartidora-uniforme-azul-gorra-caja-carton-portapapeles-mirando-sonrisa-cara-pie-sobre-pared-naranja.jpg" class="d-block w-100 img-responsive" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/esperanza-optimista-linda-mujer.jpg" class="d-block w-100 img-responsive" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+      <div class="col-md-8 gradient">
+        <div class="card-body">
+          <h1 class="card-title text-center">Te esperamos en Farmasalud 
+            <br>
+            <br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-heart-pulse-fill text-white" viewBox="0 0 16 16">
+              <path d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9H1.475Z" />
+              <path d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.88Z" />
+            </svg>
+          </h1>
+          <p class="text-center lead">Con la mejor atención, productos y servicios en todas nuestras tiendas.</p>
+          <p class="card-text"><small class="text-body-secondary">Imagen de senivpetro en Freepik</small></p>
+        </div>
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
+</div>
+<section id="ofertas">
+
+  <div class="container-fluid text-center ">
+    <h1 class="text-primary">Ofertas destacadas</h1>
+    <p class="mt-3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia qui a inventore sit ea sequi dolorum vel eum, ex ut accusantium, itaque cum enim reiciendis numquam cupiditate quaerat expedita porro.
+    </p>
+
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-container">
+            <img src="imagenes/burgesic.png" class="card-img-top" alt="Brugesic">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Brugesic 500Mg</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+              dignissimos accusantium amet similique velit iste.</p>
+          </div>
+          <div class="mb-5 d-flex justify-content-around gradient">
+            <h3 class="text-white">30% de Descuento</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-container">
+            <img src="imagenes/crema.jpg" class="card-img-top" alt="crema">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Crema Ponds</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+              dignissimos accusantium amet similique velit iste.</p>
+          </div>
+          <div class="mb-5 d-flex justify-content-around gradient">
+            <h3 class="text-white">40% de Descuento</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-container">
+            <img src="imagenes/pañal.jpg" class="card-img-top" alt="Pañal">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Pañal</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+              dignissimos accusantium amet similique velit iste.</p>
+          </div>
+          <div class="mb-5 d-flex justify-content-around gradient">
+            <h3 class="text-white">25% de Descuento</h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-container">
+            <img src="imagenes/protector.jpg" class="card-img-top" alt="protector">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Protector</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+              dignissimos accusantium amet similique velit iste.</p>
+          </div>
+          <div class="mb-5 d-flex justify-content-around gradient">
+            <h3 class="text-white">25% de Descuento</h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-container">
+            <img src="imagenes/shampoo.jpg" class="card-img-top" alt="shampoo">
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Shampoo</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+              dignissimos accusantium amet similique velit iste.</p>
+          </div>
+          <div class="mb-5 d-flex justify-content-around gradient">
+            <h3 class="text-white">30% de descuento</h3>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-container">
+            <img src="imagenes/equipos-médicos.webp" class="card-img-top" alt="Equipos médicos">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Equipos médicos</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+              dignissimos accusantium amet similique velit iste.</p>
+          </div>
+          <div class="mb-5 d-flex justify-content-around gradient">
+            <h3 class="text-white">10$ de descuento</h3>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>
+
+<section id="servicios">
+  <div class="container text-center">
+    <div class="row mb-5">
+      <div class="col">
+        <h1 class="text-primary">Nuestros servicios</h1>
+        <p class="mt-3">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia qui a inventore sit ea sequi dolorum vel eum, ex ut accusantium, itaque cum enim reiciendis numquam cupiditate quaerat expedita porro.
+        </p>
+      </div>
+      <div>
+
+      </div>
+      <div class="row d-flex">
+        <div class="col-md-3">
+          <div class="card h-100 bg-secondary">
+            <div class="card-body">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-truck img-fluid mb-3 text-primary" viewBox="0 0 16 16">
+                <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+              </svg>
+              <h3 class="text-white">Envíos</h3>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
+              <button type="button" class="btn btn-primary">
+                <a href="productos.php">
+                </a>Conoce más</button>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-heart-pulse img-fluid mb-3 text-primary" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01L8 2.748ZM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5Z" />
+                <path d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162l-1.874-4.686Z" />
+              </svg>
+              <h3>Médico en línea</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
+              <button type="button" class="btn btn-primary">
+                <a href="productos.php">
+                </a>Conoce más</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <img src="imagenes/Doctor_Medical_Instrument_Stethoscope_icon-icons.com_65902.svg" width="50" height="50" class="bi bi-heart-pulse img-fluid mb-3 text-primary" alt="">
+              <h3>Equipos médicos</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
+              <button type="button" class="btn btn-primary">
+                <a href="productos.php">
+                </a>Conoce más</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 bg-secondary">
+            <div class="card-body">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-eyeglasses img-fluid mb-3 text-primary" viewBox="0 0 16 16">
+                <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+              </svg>
+              <h3 class="text-white">Equipos médicos</h3>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
+              <button type="button" class="btn btn-primary">
+                <a href="productos.php">
+                </a>Conoce más</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+</section>
 <?php include("template/pie_pagina.php"); ?>
