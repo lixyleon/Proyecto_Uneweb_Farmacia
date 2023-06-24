@@ -1,7 +1,3 @@
-</div>
-</div>
-
-
 <footer class="text-between text-lg-start bg-white text-muted ">
     <section class="text-bg-primary p-2">
         <div class="container text-center text-md-start mt-4">
@@ -37,12 +33,14 @@
                     <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
                     <p><i class="fas fa-home me-3 text-secondary"> Caracas, Venezuela</i></p>
                     <p>
-                    <i class="fas fa-envelope me-3 text-secondary">
-                        info@example.com
-                    </i></p>
+                        <i class="fas fa-envelope me-3 text-secondary">
+                            info@example.com
+                        </i>
+                    </p>
                     <p><i class="fas fa-phone me-3 text-secondary"> + 58 234 567 88</i></p>
                     <p><i class="fas fa-print me-3 text-secondary"> +58 234 567 89</i></p>
                 </div>
+                
             </div>
         </div>
     </section>

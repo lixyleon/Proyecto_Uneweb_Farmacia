@@ -43,12 +43,15 @@
                         <a class="nav-link active text-white" href="nosotros.php">Nosotros</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                
+               
+                
+                <form class="d-flex" role="search" action="./buscar.php" method="POST">
+                    <input class="form-control me-2"  name="busqueda" type="search" placeholder="Buscar"  aria-label="Buscar">
                     <button class="btn btn-outline-info" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
     </nav>
     
-   
+    

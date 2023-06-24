@@ -104,6 +104,7 @@ $listaproducto = $sentencia->fetchAll(PDO::FETCH_OBJ);
                             <?php
                             }
                             ?>
+                        </tbody>    
                     </table>
                 </div>
 
