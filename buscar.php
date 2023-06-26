@@ -6,7 +6,7 @@ $busqueda = (!empty($_POST['busqueda'])) ? $_POST['busqueda'] : '';
 
 //consultas
 
-$query = "SELECT * FROM inventario WHERE UPPER(nombre) LIKE '%$busqueda%'";
+$query = "SELECT * FROM inventario WHERE nombre LIKE '%$busqueda%'";
 $sentencia = $conexion->query($query);
 $num_rows = count($sentencia->fetch(PDO::FETCH_ASSOC));
 
@@ -26,7 +26,7 @@ $num_rows = count($sentencia->fetch(PDO::FETCH_ASSOC));
     <?php
 
     if ($busqueda != '') {
-        echo '<table class="table table-striped m-2">';
+        echo '<table class="table  table-responsive table-striped m-2">';
         if ($num_rows > 1) {
             echo '<tr class="table-primary"><th>Nombre</th><th>Cantidad</th><th>Precio</th><th>Sucursal</th></tr>';
             while ($data = $sentencia->fetch(PDO::FETCH_ASSOC)) {
@@ -35,6 +35,7 @@ $num_rows = count($sentencia->fetch(PDO::FETCH_ASSOC));
                 echo "<td>" . $data["cantidad"] . "</td>";
                 echo "<td>" . $data["precio"] . "</td>";
                 echo "<td>" . $data["id_sucursal"] . "</td></tr>";
+                
             }
             echo "</table>";
         } else {
@@ -45,5 +46,14 @@ $num_rows = count($sentencia->fetch(PDO::FETCH_ASSOC));
 
     ?>
 </div>
+
+
+
+
+<div class="container-fluid">
+    
+</div>
 <br>
+
+
 <?php include("template/pie_pagina.php"); ?>
