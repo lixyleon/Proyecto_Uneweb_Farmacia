@@ -38,7 +38,7 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
                     <a class="nav-link text-light" href="<?php echo $url . "/administrador/seccion/crud_empleados/empleados.php"; ?>"> Empleados</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Registro de ventas y pagos</a>
+                    <a class="nav-link text-light" href="<?php echo $url . "/administrador/seccion/crud_ventas/ventas.php"; ?>">Registro de ventas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#">Sucursales</a>

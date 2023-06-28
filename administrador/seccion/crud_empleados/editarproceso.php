@@ -16,6 +16,7 @@
 
     $sentencia=$conexion->prepare("UPDATE empleados SET nombre=?, apellido=?, telefono=?, id_tipo_persona=?, num_identificacion=?, id_sucursal=? WHERE id=?;");
     $resultado = $sentencia ->execute([$nombre,$apellido,$telefono,$tipopersona,$numidentif,$sucursal, $id]);
+   
     if ($resultado===TRUE) {
         header('location: empleados.php?mensaje=modificado');
     } else {

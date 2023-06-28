@@ -10,14 +10,13 @@ $query = "SELECT * FROM inventario WHERE nombre LIKE '%$busqueda%'";
 $sentencia = $conexion->query($query);
 $num_rows = count($sentencia->fetch(PDO::FETCH_ASSOC));
 
-
 ?>
 
 
 <h1 class="text-center text-primary m-2">Consulta tus productos</h1>
 
 
-<form class="d-flex m-2" role="search" method="POST">
+<form class="d-flex m-4" role="search" method="POST">
     <input class="form-control me-2" type="search" id="search" placeholder="Buscar" name="busqueda" aria-label="Buscar" require>
     <button class="btn btn-outline-primary" type="submit">Buscar</button>
 </form>
@@ -25,9 +24,9 @@ $num_rows = count($sentencia->fetch(PDO::FETCH_ASSOC));
 <div class="container-fluid">
     <?php
 
-    if ($busqueda != '') {
-        echo '<table class="table  table-responsive table-striped m-2">';
-        if ($num_rows > 1) {
+    if ( isset($_POST['busqueda']) and $busqueda != '') {
+        echo '<table class="table  table-responsive table-striped mb-5">';
+        if ($num_rows > 0) {
             echo '<tr class="table-primary"><th>Nombre</th><th>Cantidad</th><th>Precio</th><th>Sucursal</th></tr>';
             while ($data = $sentencia->fetch(PDO::FETCH_ASSOC)) {
                 echo '<tr class="table-primary">';
@@ -45,15 +44,11 @@ $num_rows = count($sentencia->fetch(PDO::FETCH_ASSOC));
 
 
     ?>
-</div>
 
 
 
 
-<div class="container-fluid">
-    
-</div>
-<br>
+
 
 
 <?php include("template/pie_pagina.php"); ?>
