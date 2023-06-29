@@ -41,15 +41,15 @@
       <div class="col">
         <div class="card h-100">
           <div class="card-container">
-            <img src="imagenes/burgesic.png" class="card-img-top" alt="Brugesic">
+            <img src="imagenes/burgesic.png" class="card-img-top " alt="Brugesic">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Brugesic 500Mg</h5>
+            <h5 class="card-title text-center fs-3">Brugesic 500Mg</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
               dignissimos accusantium amet similique velit iste.</p>
           </div>
-          <div class="mb-5 d-flex justify-content-around gradient">
-            <h3 class="text-white">30% de Descuento</h3>
+          <div class="mb-5 d-flex justify-content-around">
+            <h3 class="text-primary fs-3">30% de Descuento</h3>
           </div>
         </div>
       </div>
@@ -60,28 +60,28 @@
             <img src="imagenes/crema.jpg" class="card-img-top" alt="crema">
           </div>
           <div class="card-body">
-            <h5 class="card-title text-center">Crema Ponds</h5>
+            <h5 class="card-title text-center fs-3">Crema Ponds</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
               dignissimos accusantium amet similique velit iste.</p>
           </div>
           <div class="mb-5 d-flex justify-content-around gradient">
-            <h3 class="text-white">40% de Descuento</h3>
+            <h3 class="text-primary fs-3">40% de Descuento</h3>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
-          <div class="card-container">
+        <div class="card h-100" >
+          <div class="card-container" >
             <img src="imagenes/pañal.jpg" class="card-img-top" alt="Pañal">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Pañal</h5>
+            <h5 class="card-title text-center fs-3">Pañal</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
               dignissimos accusantium amet similique velit iste.</p>
           </div>
           <div class="mb-5 d-flex justify-content-around gradient">
-            <h3 class="text-white">25% de Descuento</h3>
+            <h3 class="text-primary fs-3">25% de Descuento</h3>
 
           </div>
         </div>
@@ -93,30 +93,30 @@
             <img src="imagenes/protector.jpg" class="card-img-top" alt="protector">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Protector</h5>
+            <h5 class="card-title text-center fs-3">Protector</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
               dignissimos accusantium amet similique velit iste.</p>
           </div>
           <div class="mb-5 d-flex justify-content-around gradient">
-            <h3 class="text-white">25% de Descuento</h3>
+            <h3 class="text-primary fs-3">25% de Descuento</h3>
 
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100">
+        <div class="card h-100" >
           <div class="card-container">
             <img src="imagenes/shampoo.jpg" class="card-img-top" alt="shampoo">
           </div>
 
           <div class="card-body">
-            <h5 class="card-title">Shampoo</h5>
+            <h5 class="card-title text-center fs-3">Shampoo</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
               dignissimos accusantium amet similique velit iste.</p>
           </div>
           <div class="mb-5 d-flex justify-content-around gradient">
-            <h3 class="text-white">30% de descuento</h3>
+            <h3 class="text-primary fs-3">30% de descuento</h3>
 
           </div>
         </div>
@@ -128,12 +128,12 @@
             <img src="imagenes/equipos-médicos.webp" class="card-img-top" alt="Equipos médicos">
           </div>
           <div class="card-body">
-            <h5 class="card-title">Equipos médicos</h5>
+            <h5 class="card-title text-center fs-3">Equipos médicos</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
               dignissimos accusantium amet similique velit iste.</p>
           </div>
           <div class="mb-5 d-flex justify-content-around gradient">
-            <h3 class="text-white">10$ de descuento</h3>
+            <h3 class="text-primary fs-3">10$ de descuento</h3>
 
           </div>
         </div>
@@ -164,8 +164,8 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-truck img-fluid mb-3 text-primary" viewBox="0 0 16 16">
                 <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
               </svg>
-              <h3 class="text-white">Envíos</h3>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
+              <h3 class="text-center">Envíos</h3>
+              <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
               <button type="button" class="btn btn-primary">
                 <a href="productos.php">
                 </a>Conoce más</button>
@@ -209,8 +209,8 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-eyeglasses img-fluid mb-3 text-primary" viewBox="0 0 16 16">
                 <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
               </svg>
-              <h3 class="text-white">Equipos médicos</h3>
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
+              <h3 class="text-center">Equipos médicos</h3>
+              <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
               <button type="button" class="btn btn-primary">
                 <a href="productos.php">
                 </a>Conoce más</button>
