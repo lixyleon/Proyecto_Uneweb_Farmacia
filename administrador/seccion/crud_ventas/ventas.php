@@ -11,9 +11,9 @@ $listaventas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 
 ?>
 
-<div class="container mt-5">
+<div class="container-fluid mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-7">
+        <div class="col-md-8">
             <!-- inicio alerta-->
             <?php
             if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta') {
@@ -96,12 +96,28 @@ $listaventas = $sentencia->fetchAll(PDO::FETCH_OBJ);
                                     <td scope="row"><?php echo $venta->id; ?></td>
                                     <td><?php echo $venta->nombre_cliente; ?></td>
                                     <td><?php echo $venta->apellido_cliente; ?></td>
-                                    <td><?php echo $venta->id_tipo_persona; ?></td>
+                                    <td>
+                                    <?php
+                                        $sentencia5 = $conexion->query("SELECT * FROM tipo_persona WHERE id = $venta->id_tipo_persona");
+                                        $rows = $sentencia5->fetchAll(PDO::FETCH_OBJ);
+                                        foreach ($rows as $row) {
+                                            echo ($row->nombre);
+                                        }
+                                        ?>
+                                    </td>
                                     <td><?php echo $venta->num_identificacion; ?></td>
                                     <td><?php echo $venta->fecha; ?></td>
                                     <td><?php echo $venta->monto; ?></td>
                                     <td><?php echo $venta->num_factura; ?></td>
-                                    <td><?php echo $venta->id_sucursal; ?></td>
+                                    <td>
+                                    <?php
+                                        $sentencia6 = $conexion->query("SELECT * FROM sucursales WHERE id = $venta->id_sucursal");
+                                        $rows = $sentencia6->fetchAll(PDO::FETCH_OBJ);
+                                        foreach ($rows as $row) {
+                                            echo ($row->nombre);
+                                        }
+                                        ?>
+                                    </td>
                                     <td><a class="text-success" href="editar.php?id=<?php echo $venta->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
                                     <td><a onclick="return confirm('Estás seguro de eliminar?')" class="text-danger" href="eliminar.php ?id=<?php echo $venta->id; ?>"><i class=" bi bi-trash"></i></a></td>
                                 </tr>
@@ -113,7 +129,7 @@ $listaventas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 ">
             <div class="card">
                 <div class="card header">
                     <h2 class="text-center"> Ingresar datos: </h2>

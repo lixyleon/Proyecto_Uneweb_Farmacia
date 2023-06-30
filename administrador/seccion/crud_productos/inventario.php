@@ -11,9 +11,9 @@ $listaproducto = $sentencia->fetchAll(PDO::FETCH_OBJ);
 
 ?>
 
-<div class="container mt-5">
+<div class="container-fluid mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-7">
+        <div class="col-md-8">
             <!-- inicio alerta-->
             <?php
             if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta') {
@@ -92,19 +92,37 @@ $listaproducto = $sentencia->fetchAll(PDO::FETCH_OBJ);
                             ?>
                                 <tr class="">
                                     <td scope="row"><?php echo $producto->id; ?></td>
-                                    <td><?php echo $producto->id_tipo_producto; ?></td>
+                                    <td>
+                                    <?php
+                                        $sentencia2 = $conexion->query("SELECT * FROM tipo_producto WHERE id = $producto->id_tipo_producto ");
+                                        $rows = $sentencia2->fetchAll(PDO::FETCH_OBJ);
+                                        foreach ($rows as $row) {
+                                            echo ($row->categoria);
+                                        }
+                                        ?>
+                                    </td>
                                     <td><?php echo $producto->codigo; ?></td>
                                     <td><?php echo $producto->nombre; ?></td>
                                     <td><?php echo $producto->cantidad; ?></td>
                                     <td><?php echo $producto->precio; ?></td>
-                                    <td><?php echo $producto->id_sucursal; ?></td>
+                                    <td>
+                                    <?php
+                                        $sentencia3 = $conexion->query("SELECT * FROM sucursales WHERE id = $producto->id_sucursal ");
+                                        $filas = $sentencia3->fetchAll(PDO::FETCH_OBJ);
+                                        foreach ($filas as $fila) {
+                                            echo ($fila->nombre);
+                                        }
+
+                                        ?>
+                                
+                                    </td>
                                     <td><a class="text-success" href="editar.php?id=<?php echo $producto->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
                                     <td><a onclick="return confirm('Estás seguro de eliminar?')" class="text-danger" href="eliminar.php ?id=<?php echo $producto->id; ?>"><i class=" bi bi-trash"></i></a></td>
                                 </tr>
                             <?php
                             }
                             ?>
-                        </tbody>    
+                        </tbody>
                     </table>
                 </div>
 
@@ -117,21 +135,21 @@ $listaproducto = $sentencia->fetchAll(PDO::FETCH_OBJ);
                 </div>
                 <form action="registrar.php" class="p-4" method="POST">
                     <div class="mb-3">
-                    <label class="form-label">Tipo:</label>
+                        <label class="form-label">Tipo:</label>
                         <select name="txtTipo" id="txtTipo" require>
                             <option value="">Tipo de producto</option>
-                        <?php 
-                        $sentencia2 = $conexion->query("SELECT * FROM tipo_producto");
-                        $rows = $sentencia2->fetchAll(PDO::FETCH_OBJ);
-                        foreach($rows as $row) {  ?>
-                            <option value="<?php print($row -> id); ?>"><?php print($row -> categoria); ?></option>;
-                       
-                        <?php
-                        }
-                        ?>
-                           
+                            <?php
+                            $sentencia2 = $conexion->query("SELECT * FROM tipo_producto");
+                            $rows = $sentencia2->fetchAll(PDO::FETCH_OBJ);
+                            foreach ($rows as $row) {  ?>
+                                <option value="<?php print($row->id); ?>"><?php print($row->categoria); ?></option>;
+
+                            <?php
+                            }
+                            ?>
+
                         </select>
-                      </div>
+                    </div>
                     <div class="mb-3">
                         <label class="form-label">Codigo:</label>
                         <input type="text" class="form-control" name="txtCodigo" autofocus require>
@@ -151,17 +169,17 @@ $listaproducto = $sentencia->fetchAll(PDO::FETCH_OBJ);
                     <div class="mb-3">
                         <label class="form-label">Sucursal:</label>
                         <select name="txtSucursal" id="txtSucursal" require>
-                        <option value="">Sucursal</option>
-                        <?php 
-                        $sentencia3 = $conexion->query("SELECT * FROM sucursales");
-                        $filas = $sentencia3->fetchAll(PDO::FETCH_OBJ);
-                        foreach($filas as $fila) {  ?>
-                            <option value="<?php print($fila -> id); ?>"><?php print($fila -> nombre); ?></option>;
-                       
-                        <?php
-                        }
-                        ?>
-                           
+                            <option value="">Sucursal</option>
+                            <?php
+                            $sentencia3 = $conexion->query("SELECT * FROM sucursales");
+                            $filas = $sentencia3->fetchAll(PDO::FETCH_OBJ);
+                            foreach ($filas as $fila) {  ?>
+                                <option value="<?php print($fila->id); ?>"><?php print($fila->nombre); ?></option>;
+
+                            <?php
+                            }
+                            ?>
+
                         </select>
                     </div>
                     <div class="d-grid">

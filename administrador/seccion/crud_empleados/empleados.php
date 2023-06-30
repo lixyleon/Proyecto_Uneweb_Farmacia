@@ -11,9 +11,9 @@ $listaempleados = $sentencia->fetchAll(PDO::FETCH_OBJ);
 
 ?>
 
-<div class="container mt-5">
+<div class="container-fluid mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-7">
+        <div class="col-md-8 text-center">
             <!-- inicio alerta-->
             <?php
             if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta') {
@@ -65,7 +65,7 @@ $listaempleados = $sentencia->fetchAll(PDO::FETCH_OBJ);
             ?>
 
             <!-- fin alerta-->
-
+        
             <div class="card">
                 <div class="card header">
                     <h2 class="text-center"> Lista de Empleados </h2>
@@ -95,9 +95,29 @@ $listaempleados = $sentencia->fetchAll(PDO::FETCH_OBJ);
                                     <td><?php echo $empleado->nombre; ?></td>
                                     <td><?php echo $empleado->apellido; ?></td>
                                     <td><?php echo $empleado->telefono; ?></td>
-                                    <td><?php echo $empleado->id_tipo_persona; ?></td>
-                                    <td><?php echo $empleado->num_identificacion; ?></td>
-                                    <td><?php echo $empleado->id_sucursal; ?></td>
+                                    <td>
+                                    <?php
+                                        $sentencia2 = $conexion->query("SELECT * FROM tipo_persona WHERE id = $empleado->id_tipo_persona ");
+                                        $rows = $sentencia2->fetchAll(PDO::FETCH_OBJ);
+                                        foreach ($rows as $row) {
+                                            echo ($row->nombre);
+                                        }
+
+                                        ?>
+                                    </td>
+                                     <td><?php echo $empleado->num_identificacion; ?></td>
+                                    <td>
+                                        <?php
+                                        $sentencia3 = $conexion->query("SELECT * FROM sucursales WHERE id = $empleado->id_sucursal ");
+                                        $filas = $sentencia3->fetchAll(PDO::FETCH_OBJ);
+                                        foreach ($filas as $fila) {
+                                            echo ($fila->nombre);
+                                        }
+
+                                        ?>
+
+
+                                    </td>
                                     <td><a class="text-success" href="editar.php?id=<?php echo $empleado->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
                                     <td><a onclick="return confirm('Estás seguro de eliminar?')" class="text-danger" href="eliminar.php ?id=<?php echo $empleado->id; ?>"><i class=" bi bi-trash"></i></a></td>
                                 </tr>
@@ -130,17 +150,17 @@ $listaempleados = $sentencia->fetchAll(PDO::FETCH_OBJ);
                     <div class="mb-3">
                         <label class="form-label">Tipo de cédula</label>
                         <select name="txtTipoEmpl" id="txtTipoEmpl" require>
-                        <option value="">Tipo de cédula</option>
-                        <?php 
-                        $sentencia4 = $conexion->query("SELECT * FROM tipo_persona");
-                        $filas = $sentencia4->fetchAll(PDO::FETCH_OBJ);
-                        foreach($filas as $fila) {  ?>
-                            <option value="<?php print($fila -> id); ?>"><?php print($fila -> nombre); ?></option>;
-                       
-                        <?php
-                        }
-                        ?>
-                           
+                            <option value="">Tipo de cédula</option>
+                            <?php
+                            $sentencia4 = $conexion->query("SELECT * FROM tipo_persona");
+                            $filas = $sentencia4->fetchAll(PDO::FETCH_OBJ);
+                            foreach ($filas as $fila) {  ?>
+                                <option value="<?php print($fila->id); ?>"><?php print($fila->nombre); ?></option>;
+
+                            <?php
+                            }
+                            ?>
+
                         </select>
                     </div>
                     <div class="mb-3">
@@ -150,16 +170,16 @@ $listaempleados = $sentencia->fetchAll(PDO::FETCH_OBJ);
                     <div class="mb-3">
                         <label class="form-label">Sucursal:</label>
                         <select name="txtSucursal" id="txtSucursal" require>
-                        <option value="">Sucursal</option>
-                        <?php 
-                        $sentencia3 = $conexion->query("SELECT * FROM sucursales");
-                        $filas = $sentencia3->fetchAll(PDO::FETCH_OBJ);
-                        foreach($filas as $fila) {  ?>
-                            <option value="<?php print($fila -> id); ?>"><?php print($fila -> nombre); ?></option>;
-                       
-                        <?php
-                        }
-                        ?>
+                            <option value="">Sucursal</option>
+                            <?php
+                            $sentencia3 = $conexion->query("SELECT * FROM sucursales");
+                            $filas = $sentencia3->fetchAll(PDO::FETCH_OBJ);
+                            foreach ($filas as $fila) {  ?>
+                                <option value="<?php print($fila->id); ?>"><?php print($fila->nombre); ?></option>;
+
+                            <?php
+                            }
+                            ?>
 
                         </select>
                     </div>

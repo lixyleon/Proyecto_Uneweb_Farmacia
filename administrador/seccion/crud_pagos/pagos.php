@@ -11,9 +11,9 @@ $listapagos = $sentencia->fetchAll(PDO::FETCH_OBJ);
 
 ?>
 
-<div class="container mt-5">
+<div class="container-fluid mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-7">
+        <div class="col-md-8">
             <!-- inicio alerta-->
             <?php
             if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta') {
@@ -91,11 +91,29 @@ $listapagos = $sentencia->fetchAll(PDO::FETCH_OBJ);
                             ?>
                                 <tr class="">
                                     <td scope="row"><?php echo $pago->id; ?></td>
-                                    <td><?php echo $pago->id_sucursal; ?></td>
+                                    <td>
+                                    <?php
+                                        $sentencia2 = $conexion->query("SELECT * FROM sucursales WHERE id = $pago->id_sucursal ");
+                                        $rows = $sentencia2->fetchAll(PDO::FETCH_OBJ);
+                                        foreach ($rows as $row) {
+                                            echo ($row->nombre);
+                                        }
+                                        ?>
+                                    </td>
                                     <td><?php echo $pago->fecha; ?></td>
                                     <td><?php echo $pago->num_factura; ?></td>
                                     <td><?php echo $pago->monto_operacion; ?></td>
-                                    <td><?php echo $pago->id_proveedor; ?></td>
+                                    <td> <?php
+                                        $sentencia3 = $conexion->query("SELECT * FROM proveedores WHERE id = $pago->id_proveedor ");
+                                        $filas = $sentencia3->fetchAll(PDO::FETCH_OBJ);
+                                        foreach ($filas as $fila) {
+                                            echo ($fila->nombre);
+                                        }
+
+                                        ?>
+                                
+                                    
+                                    </td>
 
                                     <td><a class="text-success" href="editar.php?id=<?php echo $pago->id; ?>"><i class="bi bi-pencil-square"></i></a></td>
                                     <td><a onclick="return confirm('Estás seguro de eliminar?')" class="text-danger" href="eliminar.php ?id=<?php echo $pago->id; ?>"><i class=" bi bi-trash"></i></a></td>
