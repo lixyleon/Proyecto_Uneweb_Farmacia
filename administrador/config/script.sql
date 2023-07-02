@@ -1,5 +1,4 @@
- <?php 
-/*
+
 CREAR BASE DE DATOS 
 
 CREATE DATABASE proyect_farmacia;
@@ -7,13 +6,14 @@ CREATE DATABASE proyect_farmacia;
 CREAR TABLAS
 
 CREATE TABLE tipo_persona (
-    id INT AUTO_INCREMENT PRIMARY KEY
+    id INT AUTO_INCREMENT PRIMARY KEY,
     nombre CHAR);
-INSERT INTO tipo_persona (nombre ) VALUES ('V', 'E','J','G','P','C','R');
+
+INSERT INTO tipo_persona (nombre ) VALUES ('V'), ('E'),('J'),('G'),('P'),('C'),('R');
 
 CREATE TABLE tipo_producto (id INT AUTO_INCREMENT PRIMARY KEY, categoria VARCHAR(40)
 );
-    INSERT INTO tipo_producto (categoria ) VALUES ('Medicamentos', 'Equipos','Insumos','Consultas');
+    INSERT INTO tipo_producto (categoria ) VALUES ('Medicamentos'), ('Equipos'),('Insumos'),('Consultas');
 
 CREATE TABLE sucursales (id INT AUTO_INCREMENT PRIMARY KEY, 
 nombre VARCHAR(40),
@@ -29,9 +29,9 @@ nombre VARCHAR(40),
 apellido VARCHAR(40),
 telefono VARCHAR(20),
 id_tipo_peronsa INT,
-num_identificacion(9)
+num_identificacion INT,
 FOREIGN KEY (id_tipo_peronsa)REFERENCES tipo_persona(id)
-;)
+);
 
 CREATE TABLE inventario (id INT AUTO_INCREMENT PRIMARY KEY, 
 id_tipo_producto INT,
@@ -42,7 +42,8 @@ precio FLOAT,
 id_sucursal INT,
 FOREIGN KEY (id_tipo_producto) REFERENCES tipo_producto(id),
 FOREIGN KEY (id_sucursal ) REFERENCES sucursales(id)
-;)
+);
+
 CREATE TABLE empleados (id INT AUTO_INCREMENT PRIMARY KEY, 
 nombre VARCHAR(40),
 apellido VARCHAR(40),
@@ -60,9 +61,9 @@ id_proveedor INT,
 id_sucursal INT,
 monto_operacion FLOAT,
 num_factura INT,
-FOREIGN KEY (id_proveedor )REFERENCES proveedores(id)
+FOREIGN KEY (id_proveedor )REFERENCES proveedores(id),
 FOREIGN KEY (id_sucursal )REFERENCES sucursales(id)
-;)
+);
 
 CREATE TABLE ventas (id INT AUTO_INCREMENT PRIMARY KEY, 
 nombre_cliente VARCHAR(40),
@@ -74,8 +75,5 @@ fecha DATE,
 id_sucursal INT,
 FOREIGN KEY (id_tipo_persona )REFERENCES tipo_persona(id),
 FOREIGN KEY (id_sucursal )REFERENCES sucursales(id)
-;)
+);
 
-
-*/ 
-?> 
