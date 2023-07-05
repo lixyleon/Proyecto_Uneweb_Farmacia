@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <?php
 $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
 ?>
 
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-danger ">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #1b1b32;">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,7 +48,7 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
                     <a class="nav-link text-light " href="<?php echo $url; ?> ">Ver Sitio Web</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light " href="<?php echo $url . "/administrador/seccion/cerrar.php"; ?>">Cerrar Sesión</a>
+                    <a class="nav-link text-light " href="<?php echo $url . "/administrador/cerrarSesion.php"; ?>">Cerrar Sesión</a>
                 </li>
             </ul>
         </div>
