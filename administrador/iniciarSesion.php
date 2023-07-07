@@ -4,7 +4,7 @@
     include("config/bd.php");
 
     if(empty($_POST['usuario'] ) || empty($_POST['clave'] )) {
-        header('location: index.php?mensaje=complete todos los campos');
+        header('location: index.php?mensaje=falta');
         exit();
     } 
 
@@ -25,7 +25,7 @@
       
      if($row-> usuario===$usuario && $row -> clave===$clave){
             $_SESSION['usuario'] = $row-> usuario;
-            $_SESSION['nombre'] = $row -> clave;
+            $_SESSION['nombre'] = $row -> nombre;
             header('location:inicio.php');
             exit();
         }else{

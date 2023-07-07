@@ -2,7 +2,7 @@
         </div>
     </div>
 
-    <footer class="text-center text-white fixed-bottom" style="background-color:  #1b1b32;">
+    <footer class="text-center text-white fixed-bottom" style="background-color:  #abb2b9;">
   <!-- Grid container -->
   <div class="container p-4"></div>
   <!-- Grid container -->

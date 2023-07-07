@@ -1,3 +1,10 @@
+<?php
+session_start();
+    if(empty($_SESSION['usuario'])) {
+      header('location: index.php?mensaje=falta');
+      exit();
+  } 
+  ?>
 <!doctype html>
 <html lang="es">
 
