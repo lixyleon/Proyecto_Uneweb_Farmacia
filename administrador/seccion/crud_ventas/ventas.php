@@ -66,13 +66,13 @@ $listaventas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 
             <!-- fin alerta-->
 
-            <div class="card">
+            <div class="card d-none d-md-block">
                 <div class="card header">
                     <h2 class="text-center"> Ventas </h2>
                 </div>
             </div>
             <div class="p-4">
-                <div class="table-responsive aling-middle table-bordered " >
+                <div class="table-responsive aling-middle table-bordered d-none d-md-block" >
                     <table class="table table-striped">
                         <thead class="table-dark">
                             <tr>
