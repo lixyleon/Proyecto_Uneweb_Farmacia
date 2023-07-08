@@ -20,46 +20,6 @@ if (empty($_SESSION['usuario'])) {
 $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
 ?>
 
-<!--
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #1b1b32;">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-light" id="navbarTogglerDemo01">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
-                <path d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9H1.475Z" />
-                <path d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.88Z" />
-            </svg>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item ">
-                    <a class="nav-link active text-light" aria-current="page" href="<?php echo $url . "/administrador/inicio.php"; ?> ">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="<?php echo $url . "/administrador/seccion/crud_productos/inventario.php"; ?>">Inventario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="<?php echo $url . "/administrador/seccion/crud_proveedores/proveedores.php"; ?> ">Proveedores</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="<?php echo $url . "/administrador/seccion/crud_empleados/empleados.php"; ?>"> Empleados</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="<?php echo $url . "/administrador/seccion/crud_ventas/ventas.php"; ?>">Registro de ventas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="<?php echo $url . "/administrador/seccion/crud_pagos/pagos.php"; ?>">Registro de pagos</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-light " href="<?php echo $url . "/administrador/cerrarSesion.php"; ?>">Cerrar Sesión</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<br>
-<br> -->
 <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-pulse-fill text-white" viewBox="0 0 16 16">
