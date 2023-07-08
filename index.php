@@ -167,8 +167,7 @@
               <h3 class="text-center">Envíos</h3>
               <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
               <button type="button" class="btn btn-primary">
-                <a href="productos.php">
-                </a>Conoce más</button>
+              <a class="text-white" href="productos.php">Conoce más</a></button>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
@@ -184,8 +183,7 @@
               <h3>Médico en línea</h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
               <button type="button" class="btn btn-primary">
-                <a href="productos.php">
-                </a>Conoce más</button>
+              <a class="text-white" href="productos.php">Conoce más</a></button>
             </div>
           </div>
 
@@ -197,8 +195,7 @@
               <h3>Equipos médicos</h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
               <button type="button" class="btn btn-primary">
-                <a href="productos.php">
-                </a>Conoce más</button>
+              <a class="text-white" href="productos.php">Conoce más</a></button>
             </div>
           </div>
 
@@ -212,8 +209,7 @@
               <h3 class="text-center">Equipos médicos</h3>
               <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis aspernatur culpa deleniti sunt nihil dolore tempore, quae fugiat, error sed recusandae rem in, impedit qui cumque nisi quibusdam ipsam aliquam.</p>
               <button type="button" class="btn btn-primary">
-                <a href="productos.php">
-                </a>Conoce más</button>
+              <a class="text-white" href="productos.php">Conoce más</a></button>
             </div>
           </div>
 

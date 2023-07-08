@@ -52,9 +52,6 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-light " href="<?php echo $url; ?> ">Ver Sitio Web</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link text-light " href="<?php echo $url . "/administrador/cerrarSesion.php"; ?>">Cerrar Sesión</a>
                 </li>
             </ul>

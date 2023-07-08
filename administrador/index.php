@@ -3,10 +3,12 @@ if ($_POST) {
     header("location:inicio.php");
 }
 ?>
-<?php include("config/bd.php"); ?>
+<?php include("config/bd.php"); 
 
+$url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
+?>
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>Administrador</title>
@@ -27,7 +29,7 @@ if ($_POST) {
             </svg>
         </div>
         <div class="text-center fs-1 fw-bold">FarmaSalud</div>
-        <div class="input-group mt-4">
+        <div class="input-group m-4">
             <form action="iniciarSesion.php" method="POST">
                 <?php
                 if (isset($_GET['error'])) {
@@ -38,13 +40,13 @@ if ($_POST) {
                 <?php   } ?>
 
                 <?php
-            if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta') {
-            ?>
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <strong>Error</strong> Debes colocar todos los datos
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            <?php  } ?>
+                if (isset($_GET['mensaje']) and $_GET['mensaje'] == 'falta') {
+                ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Error</strong> Debes colocar todos los datos
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php  } ?>
                 <div class="input-group mt-4 ">
                     <div class="input-group-text bg-dark">
                         <img src="../imagenes/username-icon.svg" alt="username-icon" style="height: 1rem" />
@@ -62,9 +64,14 @@ if ($_POST) {
 
                 </div>
             </form>
+            <div class="text-center">
+                <button type="button" class="btn btn-danger mt-4">
+                    <a class="text-light " href="<?php echo $url; ?> ">Ver Sitio Web</a>
+                </button>
+                    
+            </div>
         </div>
     </div>
-
 
 
 
