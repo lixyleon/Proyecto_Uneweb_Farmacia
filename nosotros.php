@@ -4,11 +4,12 @@
 
 <div class="container-fluid py-3 text-center">
   <h1 class="display-5 fw-bold text-primary">Nosotros</h1>
-  <p class="fs-4">Somos un equipo dedicado al servicio de la salud. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a nemo, explicabo dolore impedit, modi eligendi repudiandae dolorem culpa dolorum vel possimus? Eius voluptatum doloremque natus odit maiores, odio voluptatibus</p>
+  <p class="fs-4">Somos un equipo dedicado al servicio de la salud. 
+    Iniciamos en el año 2021 y hemos crecido rápidamente, por dar un servicio de alta calidad</p>
   
 </div>
 
-
+<h2 class="m-4">Nuestro equipo</h2>
 <div class="container-fluid container-slider">
   <input type="radio" name="dot" id="one">
   <input type="radio" name="dot" id="two">

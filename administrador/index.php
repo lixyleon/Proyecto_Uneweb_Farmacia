@@ -65,7 +65,7 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
                 </div>
             </form>
             <div class="text-center">
-                <button type="button" class="btn btn-danger mt-4">
+                <button type="button" class="btn btn-danger mt-4 w-100">
                     <a class="text-light " href="<?php echo $url; ?> ">Ver Sitio Web</a>
                 </button>
                     
