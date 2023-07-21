@@ -85,7 +85,7 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
           <h5 class="card-title">Actualiza los Imagenes</h5>
           <p class="card-text">Crea, Lee, Modifica y Borra registros .</p>
           <button type="button" class="btn w-100" style="background-color:   #45b604 ;">
-                    <a class="text-white " href="#">Ir</a>
+                    <a class="text-white " href="<?php echo $url . "/administrador/seccion/crud_imagenes/index.php"; ?>">Ir</a>
           </button>
         </div>
       </div>

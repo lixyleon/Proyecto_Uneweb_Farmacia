@@ -1,4 +1,4 @@
-</div>
+﻿</div>
         </div>
     </div>
 
@@ -9,7 +9,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: #212529;">
-    © 2020 Copyright:
+    © 2023 Copyright:
     <a class="text-white" href="#">Proyecto Diplomado de Programación - Uneweb </a>
   </div>
   <!-- Copyright -->
