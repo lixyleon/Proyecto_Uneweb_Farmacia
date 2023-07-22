@@ -11,7 +11,7 @@ $sentencia = $conexion->prepare("SELECT * FROM ofertas WHERE id=?;");
 $sentencia->execute([$id]);
 $ofertas = $sentencia->fetch(PDO::FETCH_OBJ);
 
-include("../../template/pie.php");
+include("../../template/cabecera.php");
 ?>
 
 <div class="row m-3">
@@ -44,7 +44,9 @@ include("../../template/pie.php");
         
     </div>
 </div>
-
+ <br>
+ <br>
+ 
 
 <?php include("../../template/pie.php"); ?>
   

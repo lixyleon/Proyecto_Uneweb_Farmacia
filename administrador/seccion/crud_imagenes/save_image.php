@@ -9,6 +9,7 @@ $img = $_FILES['image']['name'];
 //toma el archivo
 $archivo = $_FILES['image']['tmp_name'];
 $rut = "imagenes/".$img;
+
 $_FILES['image']['type'];
 $_FILES['image']['size'];
 

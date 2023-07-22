@@ -12,7 +12,7 @@ $description = $_POST['description'];
 $img = $_FILES['image']['name'];
 //toma el archivo
 $archivo = $_FILES['image']['tmp_name'];
-$rut = "imagenes/" . $img;
+$rut = "imagenes/".$img;
 $_FILES['image']['type'];
 $_FILES['image']['size'];
 

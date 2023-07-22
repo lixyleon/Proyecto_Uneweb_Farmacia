@@ -1,5 +1,5 @@
 <?php include("template/cabecera.php"); ?>
-
+<?php include("administrador/config/bd.php"); ?>
 
 
 <div class="container-fluid py-3 text-center">
@@ -22,11 +22,19 @@
       <div class="card card-slider bg-primary">
         <div class="content content-slider">
           <div class="img img-slider">
-            <img src="imagenes/Dra.webp" alt="">
+          <?php
+        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 26 ");
+        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+        foreach ($filas as $fila) { ?>
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+        <?php
+        }
+      
+        ?>
           </div>
           <div class="details">
-            <div class="name text-white">Andrew Neil</div>
-            <div class="job text-white">Web Designer</div>
+            <div class="name text-white">Directores</div>
+            <div class="job text-white">Directores Ejecutivos</div>
           </div>
           <div class="media-icons">
             <a id="icons-slider" href="#"><i class="bi bi-facebook"></i></a>
@@ -39,7 +47,15 @@
       <div class="card card-slider">
         <div class="content content-slider">
           <div class="img img-slider">
-            <img src="imagenes/feliz-joven-repartidora-uniforme-azul-gorra-caja-carton-portapapeles-mirando-sonrisa-cara-pie-sobre-pared-naranja.jpg" alt="">
+          <?php
+        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 27 ");
+        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+        foreach ($filas as $fila) { ?>
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+        <?php
+        }
+      
+        ?>
           </div>
           <div class="details">
             <div class="name">Jasmine Carter</div>
@@ -56,7 +72,15 @@
       <div class="card card-slider">
         <div class="content content-slider">
           <div class="img img-slider">
-            <img src="imagenes/elegante-empresaria-segura-sonriendo.jpg" alt="">
+          <?php
+        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 28 ");
+        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+        foreach ($filas as $fila) { ?>
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+        <?php
+        }
+      
+        ?>
           </div>
           <div class="details">
             <div class="name">Justin Chung</div>
@@ -75,10 +99,18 @@
       <div class="card card-slider">
         <div class="content content-slider">
           <div class="img img-slider">
-            <img src="imagenes/esperanza-optimista-linda-mujer.jpg" alt="">
+          <?php
+        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 29 ");
+        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+        foreach ($filas as $fila) { ?>
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+        <?php
+        }
+      
+        ?>
           </div>
           <div class="details">
-            <div class="name">Appolo Reef</div>
+            <div class="name">Jennifer Reef</div>
             <div class="job">Web Designer</div>
           </div>
           <div class="media-icons">
@@ -92,7 +124,15 @@
       <div class="card card-slider">
         <div class="content content-slider">
           <div class="img img-slider">
-            <img src="imagenes/image_banner.jpeg" alt="">
+          <?php
+        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 30 ");
+        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+        foreach ($filas as $fila) { ?>
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+        <?php
+        }
+      
+        ?>
           </div>
           <div class="details">
             <div class="name">Adrina Calvo</div>
@@ -109,10 +149,18 @@
       <div class="card card-slider bg-primary">
         <div class="content content-slider ">
           <div class="img img-slider">
-            <img src="imagenes/pharmasict-sirviendo-al-cliente-farmacia.jpg" alt="">
+          <?php
+        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 31 ");
+        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+        foreach ($filas as $fila) { ?>
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+        <?php
+        }
+      
+        ?>
           </div>
           <div class="details">
-            <div class="name text-white">Nicole Lewis</div>
+            <div class="name text-white">Federico Lewis</div>
             <div class="job text-white">Web Devloper</div>
           </div>
           <div class="media-icons">
