@@ -59,6 +59,10 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
                     </div>
                     <input type="text" id="clave" name="clave" placeholder="Ingrese contraseña" class="form-control bg-light">
                 </div>
+                <div class="input-group-append d-flex text-black">
+                        <button id="show_password" class="btn " type="button" onclick="mostrarPassword()"> <span class="bi bi-eye-fill"></span> </button>
+                        <p class="m-1">Ver contraseña</p>
+                    </div>
                 <div class="">
                     <input type="submit" value="Iniciar sesión" class="btn btn-dark text-white  w-100 mt-4 fw-semibold shadow-sm">
 
@@ -76,6 +80,19 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
 
 
 
+    <script type="text/javascript">
+function mostrarPassword(){
+		var cambio = document.getElementById("clave");
+		if(cambio.type == "password"){
+			cambio.type = "text";
+			$('.icon').removeClass('bi bi-eye-fill').addClass('bi bi-eye');
+		}else{
+			cambio.type = "password";
+			$('.icon').removeClass('bi bi-eye-fill').addClass('bi bi-eye-fill');
+		}
+	} 
+	
+	</script>
 
 
 
@@ -86,12 +103,13 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+<script src="bottom-login.js"></script>
 
 </body>
 
