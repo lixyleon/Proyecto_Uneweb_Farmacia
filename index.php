@@ -122,7 +122,15 @@
       <div class="col">
         <div class="card h-100">
           <div class="card-container">
-            <img src="imagenes/protector.jpg" class="card-img-top" alt="protector">
+          <?php
+        $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 16 ");
+        $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
+        foreach ($filas as $fila) { ?>
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2 " alt="...">
+        <?php
+        }
+      
+        ?>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center fs-3">Protector</h5>
