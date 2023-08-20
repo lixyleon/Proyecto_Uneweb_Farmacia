@@ -200,7 +200,8 @@ $listaventas = $sentencia->fetchAll(PDO::FETCH_OBJ);
     </div>
 </div>
 
-
+<br>
+<br>
 
 
 <?php include("../../template/pie.php"); ?>

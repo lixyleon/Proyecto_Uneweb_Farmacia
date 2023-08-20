@@ -48,10 +48,10 @@ CREATE TABLE empleados (id INT AUTO_INCREMENT PRIMARY KEY,
 nombre VARCHAR(40),
 apellido VARCHAR(40),
 id_sucursal INT,
-id_tipo_persona,
-num_identificacion INT
+id_tipo_persona INT,
+num_identificacion INT,
 telefono VARCHAR(20),
-FOREIGN KEY (id_sucursal )REFERENCES sucursales(id)
+FOREIGN KEY (id_sucursal )REFERENCES sucursales(id),
 FOREIGN KEY (id_tipo_persona )REFERENCES tipo_persona(id)
 ;)
 

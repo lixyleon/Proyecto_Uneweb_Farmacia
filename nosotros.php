@@ -22,7 +22,7 @@
       <div class="card card-slider bg-primary">
         <div class="content content-slider">
           <div class="img img-slider">
-          <?php
+         <?php 
         $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 26 ");
         $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
         foreach ($filas as $fila) { ?>
@@ -30,7 +30,7 @@
         <?php
         }
       
-        ?>
+        ?> 
           </div>
           <div class="details">
             <div class="name text-white">Directores</div>
@@ -47,11 +47,11 @@
       <div class="card card-slider">
         <div class="content content-slider">
           <div class="img img-slider">
-          <?php
+          <?php 
         $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 27 ");
         $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
         foreach ($filas as $fila) { ?>
-          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="...">
+          <img src="administrador/seccion/crud_imagenes/<?php echo $fila->image;  ?>" class="card-img-top m-2" alt="..."> 
         <?php
         }
       
@@ -72,7 +72,7 @@
       <div class="card card-slider">
         <div class="content content-slider">
           <div class="img img-slider">
-          <?php
+          <?php 
         $sentencia = $conexion->query("SELECT * FROM ofertas WHERE id = 28 ");
         $filas = $sentencia->fetchAll(PDO::FETCH_OBJ);
         foreach ($filas as $fila) { ?>
