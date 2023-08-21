@@ -121,7 +121,7 @@
                 ?>
             </div>
             <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body ">
                     <h5 class="card-title">Ruth Aponte</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia aut nesciunt eligendi magni quod inventore consequuntur harum libero? Enim repre</p>
                     <p class="card-text"><small class="text-body-secondary">Ejecutiva de Envíos</small></p>
