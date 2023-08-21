@@ -57,7 +57,7 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
                     <div class="input-group-text bg-dark">
                         <img src="../imagenes/password-icon.svg" alt="password-icon" style="height: 1rem" />
                     </div>
-                    <input type="text" id="clave" name="clave" placeholder="Ingrese contraseña" class="form-control bg-light">
+                    <input type="password" id="clave" name="clave" placeholder="Ingrese contraseña" class="form-control bg-light">
                 </div>
                 <div class="input-group-append d-flex text-black">
                         <button id="show_password" class="btn " type="button" onclick="mostrarPassword()"> <span class="bi bi-eye-fill"></span> </button>

@@ -47,7 +47,7 @@ $url = "http://" . $_SERVER['HTTP_HOST'] . "/Proyecto_Uneweb_Farmacia"
                         <a class="nav-link" href="<?php echo $url . "/administrador/seccion/crud_imagenes/index.php"; ?>">Imagenes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reportes</a>
+                        <a class="nav-link"href="<?php echo $url . "/administrador/seccion/reportes/index.php"; ?>">Reportes</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
